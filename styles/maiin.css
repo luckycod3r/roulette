@@ -24,6 +24,8 @@ body{
 .container {
 	display: flex;
 	justify-content: center;
+	margin-top: 3vh;
+	
 	
 }
 .lose{
@@ -43,13 +45,13 @@ body{
 
 .prize_icon {
 	position: relative;
-	left: 47%;
+	left: 20.3vw;
 	transform: rotate(180deg);
 }
 
 .top_prize_icon {
 	position: relative;
-	left: 40%;
+	left: 17.3vw;
 	bottom: 18vh;
 }
 
@@ -78,37 +80,27 @@ body{
 
 
 
-.roll span::after{
-	content: 'Крутить!';
-}
-.roll:hover span::after{
-	content: 'Ну тыкни уже!';
-}
+
 
 
 
 .take span::after{
-	content: 'Забрать приз';
-}
-.take:hover span::after{
-	content: 'Забери меня с собой!';
+	content: 'Забрать';
 }
 
+.roll span::after{
+	content: 'Крутить!';
+}
 
 .blue_btn button{
 	background-color: #3D4ADF;
 	box-shadow: 0px 5px 0px 0px rgba(49,52,192,0.60);
 }
-.blue_btn button:hover{
-	box-shadow: 3px 3px 0px 0px rgba(49,66,192,0.60);
-	background-color: #2248D7;
-}
+
 .help span::after{
 	content: 'Помощь';
 }
-.help:hover span::after{
-	content: 'Написать в поддержку';
-}
+
 
 .total {
 	color: #D86A29;
@@ -169,4 +161,95 @@ body{
 .modal .blue_btn{
 	position: relative;
 	bottom: 1.3vh;
+}
+
+@media (max-width: 1000px) {
+	.dev-blog{
+		
+	}
+
+	.roulette{
+		margin-left: 8vh;
+	}
+	.start_btn{
+		height: 12vh;
+		width: 35vh;
+		font-size: 4vh;
+	}
+	.prize_icon{
+		left: 51vh;
+		height: 4vh;
+	}
+	.top_prize_icon{
+		left: 44vh;
+		height: 4vh;
+	}
+	.mobile_fix{
+		margin-left: 25vh;
+		margin-top: 3vh;
+	}
+	.author{
+		font-size: 2vh;
+	}
+	.modal{
+		margin-left: 15vh;
+	}
+	.modal .image{
+		height: 20vh;
+		width: 20vh;
+	}
+	.top{
+		font-size: 2vh;
+	}
+	.modal .btn button{
+		height: 6vh;
+		width: 25vh;
+		font-size: 1.8vh;
+	}
+	.app-version{
+		font-size: 2vh;
+		margin-left: 37vh;
+		width: 45vh;
+	}
+}
+@media (min-width: 1000px) {
+	.roll:hover span::after{
+		content: 'Ну тыкни уже!';
+	}
+	.take:hover span::after{
+		content: 'Забери меня с собой!';
+	}
+	.blue_btn button:hover{
+		box-shadow: 3px 3px 0px 0px rgba(49,66,192,0.60);
+		background-color: #2248D7;
+	}
+	.help:hover span::after{
+		content: 'Написать в поддержку';
+	}
+}
+
+.dev-blog {
+	background-color: rgba(0,0,0,0.7);
+	width: 78%;
+	padding: 5vh;
+	border-radius: 0.5vh;
+	color: #fff;
+	margin-top: 5vh;
+}
+
+.author {
+	margin: 0;
+	font-family: "Museo Sans Cyrl 900";
+}
+
+.title-block {
+	font-family: "Museo Sans Cyrl 900";
+	margin: 0;
+}
+
+.app-version {
+	position: fixed;
+	top: 97%;
+	font-family: "Museo Sans Cyrl 300";
+	color: #16171B;
 }
